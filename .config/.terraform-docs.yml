@@ -1,0 +1,24 @@
+formatter: "markdown"
+
+output:
+  file: "README.md"
+
+sort:
+  enabled: true
+  by: required
+
+settings:
+  read-comments: false
+  hide-empty: true
+  escape: false
+
+content: |-
+  {{ .Requirements }}
+
+  {{ .Modules }}
+
+  {{ .Resources }}
+
+  {{ .Inputs }}
+
+  {{ .Outputs }}
